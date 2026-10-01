@@ -1,0 +1,3 @@
+# Integration compatibility
+
+Automatic checks cover executables, local credential context, read-only GitHub and optional Netlify CLI access, public HTTPS, and loopback. GitHub CLI `auth status` is advisory: its failure in a sandboxed Windows context alone does not prove practical GitHub access failed. Netlify CLI authentication is distinct from Codex plugin access, local site linkage, and deployment identity. Codex connected plugins and desktop browser/screenshot tools require an agent-assisted check and cannot be invoked by this scheduled Node process. Human review is required to change compatibility guidance.

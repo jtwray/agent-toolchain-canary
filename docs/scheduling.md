@@ -1,0 +1,3 @@
+# Scheduling
+
+`schedule:plan` makes no changes. `schedule:install --confirm` and `schedule:remove --confirm` are the explicit mutation operations. `schedule:status` shows selected scheduler, exact command, computed next run, and native prior result when available. Windows creates only `Agent Toolchain Canary` for the logged-on user, with interactive token and overlap disabled. macOS creates only `dev.toolchain.canary.plist` under the user's LaunchAgents. Linux creates only `agent-toolchain-canary.service` and `.timer` under user systemd; if unavailable, it adds a tagged crontab line. Removal targets those exact names. Git Bash does not supply a cron daemon. User environments, SSH sockets, and externally supplied variables must be available in scheduler context.

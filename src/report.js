@@ -1,0 +1,3 @@
+import {readFile,readdir} from 'node:fs/promises';import {join} from 'node:path';import {reportDir} from './state.js';import {redact} from './safety.js';
+export function markdown(run){return redact(`# Agent Toolchain Canary\n\nRun: ${run.started}\n\n| Probe | Layer | Status | Classification | Evidence |\n|---|---|---|---|---|\n${run.results.map(r=>`| ${r.id} | ${r.layer} | ${r.status} | ${r.classification} | ${String(r.evidence).replace(/\|/g,'\\|')} |`).join('\n')}\n`)}
+export async function latest(){const files=(await readdir(reportDir)).filter(v=>v.endsWith('.json')).sort();if(!files.length)return null;return JSON.parse(await readFile(join(reportDir,files.at(-1)),'utf8'))}

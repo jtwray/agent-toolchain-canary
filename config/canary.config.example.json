@@ -1,0 +1,12 @@
+{
+  "expectedRemote": "",
+  "github": {"owner": "", "repository": "", "strategy": "disabled", "environmentVariable": "GITHUB_TOKEN"},
+  "netlify": {"strategy": "disabled", "environmentVariable": "NETLIFY_AUTH_TOKEN"},
+  "publicEndpoints": [],
+  "loopback": true,
+  "commands": true,
+  "timeoutMs": 10000,
+  "retention": 20,
+  "schedule": {"day": "Monday", "time": "09:00"},
+  "probes": {}
+}

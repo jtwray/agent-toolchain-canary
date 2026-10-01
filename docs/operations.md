@@ -1,0 +1,3 @@
+# Operations
+
+Run `npm run canary:dry` before a first live run. `npm run canary` returns nonzero for confirmed probe failures. `npm run report` displays the latest Markdown summary. JSON reports, history, logs, and locks live in ignored `local/`. The lock recovers after 30 minutes. Reports are retained to the configured count. The canary never changes tracked files, product repositories, provider settings, or deployments. Review a candidate incident before documenting a workaround; require a second matching run for recurring classification and two separate successful runs before proposing retirement. Durable documentation edits need human approval.

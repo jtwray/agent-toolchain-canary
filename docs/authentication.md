@@ -1,0 +1,3 @@
+# Authentication
+
+GitHub `auto` uses the configured remote's mechanism. `https` expects GitHub CLI or Git Credential Manager; `ssh` expects an existing key and agent; `environment` checks only presence of the named external variable; `disabled` turns authentication expectation off. Netlify `cli` uses existing CLI login state; `environment` expects an externally supplied `NETLIFY_AUTH_TOKEN`; `disabled` skips it. No login, logout, key, token, or credential-helper extraction occurs. `auth:doctor` summarizes provider availability and harmless read-only access without displaying credentials. Scheduled environments often differ from terminals.
