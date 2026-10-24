@@ -25,3 +25,9 @@ Windows uses Task Scheduler with an interactive current-user token, no stored pa
 The first distinct failure is a candidate; the same signature in two consecutive runs is recurring. A previously failing path that passes once is recovered; two passing runs mark it as a retirement candidate. Humans approve durable compatibility guidance changes. The canary never edits that guidance or opens issues.
 
 An ordinary Node process started by Task Scheduler, launchd, systemd, or cron cannot directly invoke Codex connected plugins or Codex desktop screenshot/viewport tooling. Connected Netlify-plugin deployment identity and Codex browser/screenshot behavior remain optional manual or agent-assisted checks. The automatic suite does not claim to test them. See [compatibility](docs/integration-compatibility.md), [operations](docs/operations.md), and [adding a probe](docs/adding-a-probe.md).
+
+## Planned work and portfolio handoff
+
+See the [Canary roadmap](docs/ROADMAP.md) for CLI evidence exports, separately scoped
+status/history, Check now and guided re-authentication. The Canary project owns
+execution and product work; the illustrated portfolio consumes approved media.
